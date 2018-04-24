@@ -26,13 +26,14 @@ class Resolver
     public function class($class, array $dependencies = [])
     {
         $this->dependencies = $dependencies;
-        $class = \ReflectionClass($class);
+
+        $class = new \ReflectionClass($class);
 
         if (!$class->isInstantiable()) {
             throw  new \Exception("{$class} is not instanciable");
         }
 
-        $constructor = $class->getConstrutor();
+        $constructor = $class->getConstructor();
 
         if (!$constructor) {
             return new $class->name;
@@ -47,10 +48,11 @@ class Resolver
     private function resolveParameters($parameters)
     {
         $dependencies = [];
+
         foreach ( $parameters as $parameter){
             $dependency = $parameter->getClass();
 
-            if($dependency){
+            if($dependency) {
                 $dependencies[] = $this->class($dependency->name, $this->dependencies);
             }else{
                 $dependencies[] = $this->getDependencies($parameter);
@@ -62,10 +64,10 @@ class Resolver
 
     private function getDependencies($parameter)
     {
-        if(isset($this->dependencies[$parameter->name])){
+        if(isset($this->dependencies[$parameter->name])) {
             return $this->dependencies[$parameter->name];
         }
-        if($parameter->isDefaultValueAvailable()){
+        if($parameter->isDefaultValueAvailable()) {
             return $parameter->getDefaultValue();
         }
 

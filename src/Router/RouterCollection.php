@@ -24,7 +24,7 @@ class RouterCollection
 
     public function filter($method)
     {
-        if (!isset($this->collection[$method])){
+        if (!isset($this->collection[$method])) {
             $this->collection[$method] = new Collection;
         }
         return $this->collection[$method];

@@ -32,7 +32,7 @@ class Router
 
     public function request( $method, $path, $fn)
     {
-        $this->collection->add( $method,$path, $fn);
+        $this->collection->add($method, $path, $fn);
     }
 
     public function run()
@@ -42,12 +42,12 @@ class Router
         foreach ($data as $key => $value){
             $result = $this->checkUrl($key, $this->path);
             $callback = $value;
-            if($result['result']){
+            if($result['result']) {
                 break;
             }
         }
 
-        if(!$result['result']){
+        if(!$result['result']) {
             $callback = null;
         }
 
@@ -59,18 +59,18 @@ class Router
 
     private function checkUrl(string $toFind, $subject)
     {
-        preg_match_all('/\{([^\}]*)\}/',$toFind, $variables);
-        $regex = str_replace('/','\/',$toFind);
+        preg_match_all('/\{([^\}]*)\}/', $toFind, $variables);
+        $regex = str_replace('/', '\/', $toFind);
 
         foreach ($variables[1] as $k => $variable){
             $as = explode(':', $variable);
             $replecement = $as[1] ?? '([a-zA-Z0-9\-\_\ ]+)';
-            $regex = str_replace($variables[$k],$replecement, $regex);
+            $regex = str_replace($variables[$k], $replecement, $regex);
         }
 
-        $regex = preg_replace('/{([a-zA-Z]+)}/','([a-zA-Z0-9+])', $regex);
+        $regex = preg_replace('/{([a-zA-Z]+)}/', '([a-zA-Z0-9+])', $regex);
         $result = preg_match('/^' . $regex . '$/', $subject, $params);
 
-        return compact('result','params');
+        return compact('result', 'params');
     }
 }
