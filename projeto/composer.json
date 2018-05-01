@@ -1,0 +1,28 @@
+{
+    "name": "jm/php-jeito-certo-12son",
+    "authors": [
+        {
+            "name": "João Mangueira",
+            "email": "jamjs7@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type":"path",
+            "url":"../orm-13son"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.6",
+        "squizlabs/php_codesniffer": "^3.2",
+        "jm/orm-13son": "@dev",
+        "pimple/pimple": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "JM\\SON\\":"src",
+            "JM\\App\\":"app"
+        }
+    }
+
+}

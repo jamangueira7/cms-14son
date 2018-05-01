@@ -12,6 +12,46 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/projeto/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/projeto/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/projeto/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/projeto/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/projeto/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/projeto/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/projeto/vendor/composer" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/projeto/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/projeto/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/projeto/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/projeto/vendor/jm/orm-13son" />
+      <path value="$PROJECT_DIR$/projeto/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/projeto/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/projeto/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/projeto/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/projeto/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/projeto/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/projeto/vendor/pimple/pimple" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
