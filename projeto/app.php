@@ -20,7 +20,7 @@ $app->setRenderer(new JM\SON\Renderer\PHPRenderer);
 $container = new Container();
 
 $container['pdo'] = function($c){
-    return new PDO('mysql:host=localhost:8080;dbname=cms-14son','root','');
+    return new PDO('mysql:host=localhost;dbname=cms-14son','root','');
 };
 
 $container['model_user'] = $container->factory(function($c){
